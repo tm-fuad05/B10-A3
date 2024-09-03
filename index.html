@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,14 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                 primary: '#ABEF5F',
+                 secondary: '#ABEF5F80', 
+                 gray: '#494949',
+                 card1:'#E7C1D3',
+                 card2: '#EFDA6E',
+                 card3: '#A4DAC3',
+                 card4: '#77AAEA ', 
+                 stroke: 'rgb(233, 233, 233)',
               },
               fontFamily:{
                 manrope: 'Manrope',
@@ -32,7 +39,44 @@
         }
       </script>
 </head>
+
+
+
 <body class="font-manrope">
-    
+    <!-- Header Section  -->
+     <Header>
+        <!-- Navbar -->
+        <nav class="w-10/12 mx-auto">
+          <div class="flex justify-between items-center py-6">
+            <div >
+              
+              <a class=" text-2xl font-extrabold"><i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-2"></i> Rinterio</a>
+            </div>
+            
+            <ul class="hidden lg:flex gap-6 ">
+                <li><a href="#" class="font-bold">Home</a></li>
+                <li><a href="#" >Services</a></li>
+                <li><a href="#" >Portfolio</a></li>
+                <li><a href="#" >Blogs</a></li>
+                <li><a href="#" >Contuct Us</a></li></ul>
+                
+            <div class="flex items-center gap-3">
+              <!-- Search -->
+              <button class="max-sm:hidden"><a href="#"><i class="fa-solid fa-magnifying-glass align-middle bg-white rounded-full p-3 border border-stroke"></i></a></button>
+              <!-- Cart  -->
+              <button class="max-sm:hidden"><i class="fa-solid border fa-cart-shopping  align-middlebg-white rounded-full p-3 border border-stroke"></i></button>
+              <div  class="max-sm:hidden">
+                <a href="#" class="bg-primary px-4 py-3 rounded-3xl font-extrabold hover:bg-secondary">Book Consult  <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-2"></i> </a>
+              </div>
+            </div>
+            <!-- menu  -->
+             <div class="lg:hidden"><i class="fa-solid fa-bars bg-white rounded-full p-3 border border-stroke"></i></div>
+          </div>
+        </nav>
+        <!-- Banner -->
+        <Figure>
+
+        </Figure>
+     </Header>
 </body>
 </html>
