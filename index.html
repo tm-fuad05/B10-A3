@@ -30,6 +30,7 @@
                  card3: '#A4DAC3',
                  card4: '#77AAEA ', 
                  stroke: 'rgb(233, 233, 233)',
+                 bgcolor: '#F4F4F4',
               },
               fontFamily:{
                 manrope: 'Manrope',
@@ -44,9 +45,9 @@
 
 <body class="font-manrope">
     <!-- Header Section  -->
-     <Header>
+     <Header class="mb-16">
         <!-- Navbar -->
-        <nav class="w-10/12 mx-auto">
+        <nav class="w-10/12 max-sm:w-11/12 mx-auto">
           <div class="flex justify-between items-center py-6">
             <div >
               
@@ -74,7 +75,7 @@
           </div>
         </nav>
         <!-- Banner -->
-        <Figure class="w-10/12 mx-auto flex flex-col gap-7 items-center mb-16">
+        <Figure class="w-10/12 mx-auto flex flex-col gap-7 items-center max-sm:w-11/12 ">
           <img src="assets/banner.png" alt="">
           <h1 class=" lg:w-10/12 text-6xl text-center leading-tight font-extrabold max-sm:text-4xl ">A barn house of this design has a striking appearance</h1>
           <p class="lg:w-11/12 text-center text-gray font-semibold ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
@@ -85,5 +86,40 @@
 
         </Figure>
      </Header>
+    <!-- Main Section  -->
+     <main class="bg-bgcolor">
+      <img class="lg:w-32 relative left-16 top-12 max-sm:hidden" src="assets/Vector.png" alt="">
+      <!-- About Section  -->
+       <Section class="lg:w-10/12 mx-auto flex items-center py-12 gap-10 max-sm:flex-col w-11/12">
+        <!-- Text div  -->
+         <div class="flex-1 flex flex-col gap-5 ">
+            
+            <div class="lg:text-start max-sm:text-center"><span class="bg-white px-3 py-2 rounded-3xl"><i class="fa-solid fa-arrow-right"></i> About Us</span></div>
+            <!-- content  -->
+            <h3 class="lg:text-start max-sm:text-center text-3xl font-extrabold lg:w-2/3">We design thoughtful, liveable spaces</h3>
+            <p class="lg:text-start max-sm:text-center text-gray text-sm font-bold ">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <!-- box -->
+             <div class="flex gap-5 bg-white rounded-lg p-5">
+              <img src="assets/commercial.png" alt="">
+              <div class="space-y-2 w-2/3">
+                <h6 class="text-lg font-bold ">Commercial</h6>
+                <p class="text-gray text-sm  ">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+             </div>
+             <div class="flex gap-5 bg-white rounded-lg p-5">
+              <img src="assets/residential.png" alt="">
+              <div class="space-y-2 w-2/3">
+                <h6 class="text-lg font-bold ">Residential</h6>
+                <p class="text-gray text-sm  ">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+             </div>
+         </div>
+        <!-- img div  -->
+         <div class="flex-1">
+          <img class="lg:w-11/12" src="assets/Rectangle.png" alt="">
+         </div>
+       </Section>
+     </main>
 </body>
 </html>
